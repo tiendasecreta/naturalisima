@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #008037;
+  --primary-dark: #005e28;
+  --primary-light: #e8f5e9;
+  --text-dark: #1a1a1a;
+  --text-muted: #666666;
+  --bg-color: #f4f7f5;
+  --card-bg: #ffffff;
+  --warning-bg: #fff8e1;
+  --warning-text: #b78103;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 25px -5px rgba(0, 128, 55, 0.15);
+}
+
+/* Reset Básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  line-height: 1.5;
+}
+
+/* Contenedor Principal (Tarjeta de Producto) */
+.container {
+  background-color: var(--card-bg);
+  max-width: 480px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 28px 20px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border: 1px solid rgba(0, 128, 55, 0.1);
+}
+
+/* Insignia / Badge */
+.badge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+/* Título y Subtítulo */
+h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Imagen del Banner */
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+  object-fit: cover;
+}
+
+/* Precios y Ahorro */
+.precio-regular {
+  color: var(--text-muted);
+  font-size: 1rem;
+  text-decoration: line-through;
+  margin-bottom: 2px;
+}
+
+.precio-oferta {
+  color: var(--primary-dark);
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.ahorro {
+  display: inline-block;
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 6px 16px;
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+
+/* Caja de Información de Despacho */
+.info-despacho {
+  background-color: #fafafa;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  font-size: 0.88rem;
+  color: #333333;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Botón de Compra Directa (Wompi) */
+.btn-wompi {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 18px 16px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 128, 55, 0.35);
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.btn-wompi:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 128, 55, 0.45);
+}
+
+.btn-wompi:active {
+  transform: translateY(0);
+}
